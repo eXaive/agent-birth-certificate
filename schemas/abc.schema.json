@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent Birth Certificate (ABC) Schema",
+  "type": "object",
+  "properties": {
+    "agent_id": { "type": "string" },
+    "agent_name": { "type": "string" },
+    "version": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "capabilities": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["agent_id", "created_at"]
+}
